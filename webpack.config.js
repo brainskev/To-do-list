@@ -1,20 +1,20 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: "development",
-  entry: "./src/index.js",
+  mode: 'development',
+  entry: './src/index.js',
   output: {
-    filename: "main[contentHash].js",
-    path: path.resolve(__dirname, "dist"),
+    filename: 'main[contentHash].js',
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
         test: /\.css$/,
         use: [
-          "style-loader",
-          "css-loader",
+          'style-loader',
+          'css-loader',
           // "sass-loader"
         ],
       },
@@ -22,14 +22,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/template.html",
+      template: './src/template.html',
     }),
   ],
   devServer: {
     static: {
-      directory: path.resolve(__dirname, "public"),
+      directory: path.resolve(__dirname, 'public'),
     },
-    port: "auto",
+    port: 'auto',
     hot: true,
   },
 };

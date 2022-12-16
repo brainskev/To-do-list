@@ -21,7 +21,6 @@
     "ignorePatterns": [
       "dist/",
       "build/"
-    ],
-    "quotes": ["error", "double"]
+    ]
   }
   
