@@ -93,8 +93,6 @@ run npm run test to check and validate the HTML and CSS files.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-```
-
 ## 👥 Author <a name="authors"></a>
 
 👤 **Kelvin Kaviku**
@@ -137,4 +135,3 @@ If you like this project, Give a ⭐️.
 This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-```
