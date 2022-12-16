@@ -72,7 +72,7 @@
 To get a local copy of the repository please run the following commands on your terminal:
 
 ```
-git clone https://github.com/SelmaNdapanda/To-Do-List.git
+git clone https://github.com/brainskev/To-do-list/.git
 ```
 
 ## Linters
@@ -80,6 +80,8 @@ git clone https://github.com/SelmaNdapanda/To-Do-List.git
 ```
 run npm install.
 run npm run test to check and validate the HTML and CSS files.
+
+```
 
 ### Visit And Open Files
 
@@ -90,6 +92,8 @@ run npm run test to check and validate the HTML and CSS files.
 [Download Repo](https://github.com/brainskev/Awesomebooks/archive/refs/heads/books.zip)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+```
 
 ## 👥 Author <a name="authors"></a>
 
