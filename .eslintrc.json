@@ -22,8 +22,6 @@
       "dist/",
       "build/"
     ],
-    "quotes": [
-      "error", "single", "double"
-    ]
+    "quotes": ["error", "double"]
   }
   
