@@ -39,9 +39,15 @@ export default class Interactive {
   
 
   // add event listener on reload icon
-  static reload(refresh) {
-    refresh.addEventListener('click', () => {
-      window.location.reload();
-    });
+  static reloadPage(refresh) {
+    const reload = () => {
+      try {
+        window.location.reload();
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    refresh.addEventListener('click', reload);
   }
-}
+  
+  
