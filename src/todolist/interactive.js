@@ -21,33 +21,24 @@ export default class Interactive {
   }
 
   // remove all completed tasks
-  function removeCompletedTasks(removeCompletedButton) {
-    const removeTasks = () => {
+  removeCompleted(removeCompleted) {
+    removeCompleted.addEventListener('click', () => {
       this.toDoList = this.toDoList.filter((task) => task.completed !== true);
-      this.toDoList = this.toDoList.map((task, index) => {
-        return { ...task, index };
+      localStorage.setItem('todo', JSON.stringify(this.toDoList));
+      this.toDoList.forEach((task, index) => {
+        if (task.index !== index) {
+          task.index = index;
+        }
       });
-      try {
-        localStorage.setItem('todo', JSON.stringify(this.toDoList));
-      } catch (error) {
-        console.error(error);
-      }
+      localStorage.setItem('todo', JSON.stringify(this.toDoList));
       window.location.reload();
-    };
-    removeCompletedButton.addEventListener('click', removeTasks);
+    });
   }
-  
 
   // add event listener on reload icon
-  static reloadPage(refresh) {
-    const reload = () => {
-      try {
-        window.location.reload();
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    refresh.addEventListener('click', reload);
+  static reload(refresh) {
+    refresh.addEventListener('click', () => {
+      window.location.reload();
+    });
   }
-  
-  
+}
