@@ -21,19 +21,22 @@ export default class Interactive {
   }
 
   // remove all completed tasks
-  removeCompleted(removeCompleted) {
-    removeCompleted.addEventListener('click', () => {
+  function removeCompletedTasks(removeCompletedButton) {
+    const removeTasks = () => {
       this.toDoList = this.toDoList.filter((task) => task.completed !== true);
-      localStorage.setItem('todo', JSON.stringify(this.toDoList));
-      this.toDoList.forEach((task, index) => {
-        if (task.index !== index) {
-          task.index = index;
-        }
+      this.toDoList = this.toDoList.map((task, index) => {
+        return { ...task, index };
       });
-      localStorage.setItem('todo', JSON.stringify(this.toDoList));
+      try {
+        localStorage.setItem('todo', JSON.stringify(this.toDoList));
+      } catch (error) {
+        console.error(error);
+      }
       window.location.reload();
-    });
+    };
+    removeCompletedButton.addEventListener('click', removeTasks);
   }
+  
 
   // add event listener on reload icon
   static reload(refresh) {
