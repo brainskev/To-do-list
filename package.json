@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edenlisk/ToDoList.git"
+    "url": "git+https://github.com/brainskev/To-do-list.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/edenlisk/ToDoList/issues"
+    "url": "https://github.com/brainskev/To-do-list/issues"
   },
-  "homepage": "https://github.com/edenlisk/ToDoList#readme",
+  "homepage": "https://github.com/brainskev/To-do-list/main/dist",
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",
