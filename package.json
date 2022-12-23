@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/brainskev/To-do-list/issues"
   },
-  "homepage": "https://github.com/brainskev/To-do-list/main/dist",
+  "homepage": "https://github.com/brainskev/To-do-list/tree/main/dist",
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",
