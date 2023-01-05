@@ -30,9 +30,9 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 Awesome-books <a name="about-project"></a>
+# 📖 TO DO-LIST <a name="about-project"></a>
 
-**Awesome-books**  Is a tool that helps to organize your day. It simply lists the tasks that you need to perform and allow you to mark them as complete.
+**To-do-list**  Is a tool that helps to organize your day. It simply lists the tasks that you need to perform and allow you to mark them as complete.
 
 ## 🛠 Built With <a name="built-with"></a>
 
